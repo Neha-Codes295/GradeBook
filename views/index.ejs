@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=7" />
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="/css/navbar.css" />
+
+    <link rel="stylesheet" href="/css/index.css" />
+
+    <link rel="stylesheet" href="/css/footer.css" />
+
+    <title>IIIT UNA</title>
+
+    
+
+  </head>
+
+  <body>
+      
+      <nav class="navbar navbar-expand-lg" style="background-color: #002541 !important;">
+      <a class="navbar-brand" href="/">
+          <img
+          class="logo-one"
+          src="/img/1logo-una.png"
+          alt="Institute logo"
+        />
+        <span style="color: rgb(255, 255, 255); margin-top: 50px ;font-size: 30px; text-align: center;" >Indian Institute of Information Technology Una</span>
+        
+        
+    </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="true"
+        aria-label="Toggle navigation"
+        >
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="/result">Home</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="/result"
+              >Result</a
+            >
+        </li>
+        
+        <li class="nav-item">
+            <a class="nav-link" href="#about">About Us</a>
+          </li>
+
+          <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact Us</a>
+            </li>
+            
+          <li class="nav-item dropdown">
+            <a
+            class="nav-link btn btn-primary"
+            href="#"
+            id="navbarDropdown"
+            role="button"
+            data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              <span>Login Here</span>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="/admin-login"
+                >As Admin</a
+              >
+              <a class="dropdown-item" href="./node/logout.js"
+              >Logout</a
+              >
+              
+            </div>
+        </li>
+    </ul>
+      </div>
+    </nav>
+    
+    <div style="padding: 3.4rem;" class="space"></div>
+    
+
+    <div style="padding: 3.4rem;" class="space"></div>
+
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <!-- <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="3"></li> -->
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block w-100" src="/img/entrance pic.jpg" alt="First slide" height="500px">
+          </div>
+          <!-- <div class="carousel-item">
+            <img class="d-block w-100" src="campus.jpg" alt="Second slide" height="500px">
+          </div> -->
+          <div class="carousel-item">
+            <img class="d-block w-100" src="/img/Campus_IIITU_evening.jpg" alt="Third slide" height="500px">
+          </div>
+          <!-- <div class="carousel-item">
+            <img class="d-block w-100" src="26januna.jpg" alt="fourth slide" height="500px"> -->
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+
+
+
+      <div class="container">
+        <br><br><br><br><br>
+          <h1 class="heading">GradeBook - Student Result Management System</h1>
+          <br><br><br>
+          <p>This is the home page of our gradebook project. Here, you can manage and view student grades, calculate averages, and track academic progress.</p>
+    <p>Whether you're a student, teacher, or administrator, our gradebook system provides a user-friendly interface to efficiently manage academic data.</p>
+    <br><br>
+    <h2>Key Features:</h2>
+    <br>
+    <ul>
+      <li><strong>Student Grades:</strong> Easily access and view individual student grades for each subject.</li>
+      <li><strong>Average Calculation:</strong> Automatically calculate class averages, subject averages, and student GPA.</li>
+      <li><strong>Progress Tracking:</strong> Monitor student progress over time with comprehensive academic reports and charts.</li>
+      <li><strong>User Roles:</strong> Differentiate between student, teacher, and administrator roles with tailored permissions and functionalities.</li>
+      <li><strong>Data Security:</strong> Ensure the security and privacy of academic records with robust authentication and encryption measures.</li>
+    </ul>
+    <br><br>
+    <h2 >How to Get Started:</h2>
+    <br>
+    <p>To begin using our Gradebook Project, follow these simple steps:</p>
+    <ol>
+      <li><strong>Register/Login:</strong> If you're a new user, register for an account. Existing users can simply log in.</li>
+      <li><strong>Explore Features:</strong> Take a tour of the gradebook system and familiarize yourself with its features and functionalities.</li>
+      <li><strong>Manage Data:</strong> Input student grades, update records, and generate reports as needed.</li>
+      <li><strong>Reach Out:</strong> Have questions or need assistance? Contact our support team for prompt assistance.</li>
+    </ol>
+
+          <br><br><br>
+        </div>
+      
+      
+    <section id="about">
+        <h1 class="heading">About Us</h1>
+        <br><br>
+        <h5 class="about-text text-center">
+            IIIT Una, Located in the picturesque district of Una, Himachal Pradesh, the Indian Institute of Information Technology, Una (IIIT Una) stands as a beacon of technological advancement in the region. Established by the Ministry of Human Resource Development, Government of India, IIIT Una is a premier institute dedicated to providing quality education and research opportunities in the field of Information Technology.
+        </h5>
+    </section>
+
+
+    <div class="parallax1">
+        <h5 class="about-text-2 text-center">
+            As part of my academic endeavor at IIIT Una, I am developing a Student Result Management System. This web-based application aims to streamline the process of managing and accessing academic results for both students and faculty members. Through this project, students will be able to log in securely to view their detailed academic performance, including subject-wise marks, total marks, percentage, and other relevant information.
+        </h5>
+    </div>
+<br><br><br><br><br>
+    <h1 class="heading">Results Speak The Loudest</h1>
+    <br><br>
+    <div class="container">
+        <p class="centered-paragraph">Thank you for choosing Gradebook. We are committed to providing you with a seamless academic management experience.</p>
+    </div>
+    
+
+
+    <footer id="contact">
+      <div class="footer-top">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4 col-md-6">
+              <a href="./index.html">
+                <img
+                  class="logo2"
+                  src="/img/id-card.png"
+                  alt="logo2"
+                />
+              </a>
+              <p class="content1">
+                Faculty members will have access to administrative features allowing them to manage student results efficiently. This includes functionalities such as adding or updating the student marks, calculating averages, and identifying the top performers.
+                <br /><br />
+                Designed with user-friendly interfaces and robust security measures, the Student Result Management System is poised to become an invaluable tool for the IIIT Una community, facilitating seamless access to academic information and promoting a culture of excellence in education and research. 
+              </p>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+              <h6 class="content2">CONTACT US</h6>
+              <div class="social-icons">
+                <a
+                  class="icon-link"
+                  href="https://www.facebook.com/iiituna/"
+                  ><i class="fa fa-facebook" aria-hidden="true"></i
+                ></a>
+                <a class="icon-link" href="https://twitter.com/iiituna"
+                  ><i class="fa fa-twitter" aria-hidden="true"></i
+                ></a>
+                <a
+                  class="icon-link"
+                  href="https://www.linkedin.com/school/iiituna/"
+                  ><i class="fa fa-linkedin" aria-hidden="true"></i
+                ></a>
+                <a
+                  class="icon-link"
+                  href="https://iiitu.ac.in/"
+                  ><i class="fa fa-youtube" aria-hidden="true"></i
+                ></a>
+                <a
+                  class="icon-link"
+                  href="https://accounts.google.com/signin/v2/identifier?continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&service=mail&hd=iiitu.ac.in&sacu=1&flowName=GlifWebSignIn&flowEntry=AddSession"
+                  ><i class="fa fa-google" aria-hidden="true"></i
+                ></a>
+                
+
+
+                <br /><br />
+                <p class="contact-details">
+                  <i class="fa fa-envelope" aria-hidden="true"></i> &nbsp;
+                  <a href="mailto:enquiry@giet.edu" style="color:#fff; text-decoration: none;"> 22141@iiitu.ac.in , enquiry@gmail.com</a>
+                  <br /><br />
+                  <i class="fa fa-phone" aria-hidden="true"></i> &nbsp;
+                  +91 -  9876331860 , 9898989898<br /><br />
+                  <i class="fa fa-map-marker" aria-hidden="true"></i> &nbsp;
+                  Naya Nangal - 140126 , Punjab , India
+                </p>
+              </div>
+            </div>
+
+            <div class="col-lg-4 mt-3">
+              <h4>IIIT Una, Himachal Pradesh</h4>
+              <div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11780.744502178191!2d76.18936023233019!3d31.476646864047954!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391adb198180014f%3A0xbf76347093a3aa9a!2sIIIT%20Una%20Campus!5e0!3m2!1sen!2sin!4v1651907256935!5m2!1sen!2sin" width="440" height="440" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer2">
+            &nbsp;&copy;&nbsp;IIIT Una 2021 All Rights Reserved.
+        </div>
+      </div>
+    </footer>
+
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script src="/js/index.js"></script>
+
+
+  </body>
+</html>

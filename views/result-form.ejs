@@ -1,0 +1,251 @@
+<html>
+  <head>
+    <title>IIIT UNA - Check your Result Here</title>
+  </head>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=7" />
+  <!-- <link
+    rel="shortcut icon"
+    href="../assets/logo and favicon/favicon.png"
+    type="image/x-icon"
+  /> -->
+
+  <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+    crossorigin="anonymous"
+  />
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet"
+  />
+
+  <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+    crossorigin="anonymous"
+  />
+
+  <link rel="stylesheet" href="/css/navbar.css" />
+
+  <link rel="stylesheet" href="/css/common-navbar-style.css" />
+
+  <link rel="stylesheet" href="/css/footer.css" />
+
+  <style>
+    form {
+      margin: 2% 15%;
+    }
+
+    @media (max-width: 767px) {
+      form {
+        margin: 5%;
+      }
+    }
+  </style>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="/">
+        <img
+          class="logo-one"
+          src="/img/1logo-una.png"
+          alt="Institute logo"
+        />
+        <span style="color: rgb(255, 255, 255); margin-top: 50px ;font-size: 30px; text-align: center;" >Indian Institute of Information Technology Una</span>
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="true"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="/">Home</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="/result"
+              >Result</a
+            >
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="../index.html#about">About Us</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact Us</a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link btn btn-primary"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              <span>Login</span>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="/admin-login"
+                >As Admin</a
+              >
+              <a class="dropdown-item" href="/">Logout</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <h1 class="head text-center">
+        <br>
+      Check your Results Here
+    </h1>
+
+    <form
+      class="jumbotron"
+      method="POST"
+      action="/result"
+    >
+      <div class="form-group">
+        <label for="exampleInputEmail1">Email address</label>
+        <input
+          type="email"
+          class="form-control"
+          id="exampleInputEmail1"
+          name="email"
+        />
+      </div>
+      <div class="form-group">
+        <label for="exampleInputRegno1">Registration Number</label>
+        <input
+          type="number"
+          class="form-control"
+          id="exampleInputRegno1"
+          name="reg"
+        />
+      </div>
+      <button type="submit" class="btn btn-dark" name="submit">Submit</button>
+      <% if (message) { %>
+          <p style="color: red;">
+            <%= message %>
+        </p>
+        <% } %>
+    </form>
+    
+    <footer id="contact">
+      <div class="footer-top">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4 col-md-6">
+              <a href="/">
+                <img
+                  class="logo2"
+                  src="/img/id-card.png"
+                  alt="logo2"
+                />
+              </a>
+              <p class="content1">
+                Faculty members will have access to administrative features allowing them to manage student results efficiently. This includes functionalities such as adding or updating the student marks, calculating averages, and identifying the top performers.
+                <br /><br />
+                Designed with user-friendly interfaces and robust security measures, the Student Result Management System is poised to become an invaluable tool for the IIIT Una community, facilitating seamless access to academic information and promoting a culture of excellence in education and research.
+              </p>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+              <h6 class="content2">CONTACT US</h6>
+              <div class="social-icons">
+                <a
+                  class="icon-link"
+                  href="https://www.facebook.com/iiituna/"
+                  ><i class="fa fa-facebook" aria-hidden="true"></i
+                ></a>
+                <a class="icon-link" href="https://twitter.com/iiituna"
+                  ><i class="fa fa-twitter" aria-hidden="true"></i
+                ></a>
+                <a
+                  class="icon-link"
+                  href="https://www.linkedin.com/school/iiituna/"
+                  ><i class="fa fa-linkedin" aria-hidden="true"></i
+                ></a>
+                <a
+                  class="icon-link"
+                  href="https://iiitu.ac.in/"
+                  ><i class="fa fa-youtube" aria-hidden="true"></i
+                ></a>
+                <a
+                  class="icon-link"
+                  href="https://accounts.google.com/signin/v2/identifier?continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&service=mail&hd=iiitu.ac.in&sacu=1&flowName=GlifWebSignIn&flowEntry=AddSession"
+                  ><i class="fa fa-google" aria-hidden="true"></i
+                ></a>
+
+
+
+                <br /><br />
+                 <p class="contact-details">
+                  <i class="fa fa-envelope" aria-hidden="true"></i> &nbsp;
+                  <a href="mailto:enquiry@giet.edu" style="color:#fff; text-decoration: none;"> 22141@iiitu.ac.in , enquiry@gmail.com</a>
+                  <br /><br />
+                  <i class="fa fa-phone" aria-hidden="true"></i> &nbsp;
+                  +91 -  9876331860 , 9898989898<br /><br />
+                  <i class="fa fa-map-marker" aria-hidden="true"></i> &nbsp;
+                  Naya Nangal - 140126 , Punjab , India
+                </p>
+              </div>
+            </div>
+
+            <div class="col-lg-4 mt-3">
+                <h4>IIIT Una, Himachal Pradesh</h4>
+                <div>
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11780.744502178191!2d76.18936023233019!3d31.476646864047954!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391adb198180014f%3A0xbf76347093a3aa9a!2sIIIT%20Una%20Campus!5e0!3m2!1sen!2sin!4v1651907256935!5m2!1sen!2sin" width="440" height="440" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer2">
+            &nbsp;&copy;&nbsp;IIIT Una 2021 All Rights Reserved.
+        </div>
+      </div>
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script src="/js/index.js"></script>
+
+    <script src="/js/result-form.js"></script>
+  </body>
+</html>
